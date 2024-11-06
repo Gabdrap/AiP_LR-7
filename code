@@ -20,20 +20,87 @@ int main()
 
     if (choise == 1)
     {
-        cout << "Введите значение A: ";
-        cin >> a;
-        cout << "Введите значение B: ";
-        cin >> b;
-        cout << "Введите значение C: ";
-        cin >> c;
-        bool r1 = a || b && c;
-        if (r1 == true)
+        int choise1;
+        cout << "1. а" "\n";
+        cout << "2. б" "\n";
+        cout << "3. в" "\n";
+        cout << "4. г" "\n";
+        cout << "Выберите задание" "\n";
+        cin >> choise1;
+        if (choise1 == 1)
         {
-            cout << "Значение выражения: True";
+            cout << "Введите значение A: ";
+            cin >> a;
+            cout << "Введите значение B: ";
+            cin >> b;
+            cout << "Введите значение C: ";
+            cin >> c;
+            bool r1 = a || b && c;
+            if (r1 == true)
+            {
+                cout << "Значение выражения: True";
+            }
+            else
+            {
+                cout << "Значение выражения: False";
+            }
         }
-        else
+        
+        if (choise1 == 2)
         {
-            cout << "Значение выражения: False";
+            cout << "Введите значение A: ";
+            cin >> a;
+            cout << "Введите значение B: ";
+            cin >> b;
+            cout << "Введите значение C: ";
+            cin >> c;
+            bool r1 = !(b || a || c);
+            if (r1 == true)
+            {
+                cout << "Значение выражения: True";
+            }
+            else
+            {
+                cout << "Значение выражения: False";
+            }
+        }
+
+        if (choise1 == 3)
+        {
+            cout << "Введите значение A: ";
+            cin >> a;
+            cout << "Введите значение B: ";
+            cin >> b;
+            cout << "Введите значение C: ";
+            cin >> c;
+            bool r1 = a && !b || c;
+            if (r1 == true)
+            {
+                cout << "Значение выражения: True";
+            }
+            else
+            {
+                cout << "Значение выражения: False";
+            }
+        }
+
+        if (choise1 == 4)
+        {
+            cout << "Введите значение A: ";
+            cin >> a;
+            cout << "Введите значение B: ";
+            cin >> b;
+            cout << "Введите значение C: ";
+            cin >> c;
+            bool r1 = !a && (!b || c);
+            if (r1 == true)
+            {
+                cout << "Значение выражения: True";
+            }
+            else
+            {
+                cout << "Значение выражения: False";
+            }
         }
     }
 }
