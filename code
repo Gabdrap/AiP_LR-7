@@ -11,6 +11,10 @@ bool r3;
 bool r4;
 int x;
 int y;
+int num1;
+int num2;
+int num3;
+int neg;
 
 int main()
 {
@@ -25,7 +29,7 @@ int main()
 
     if (choise == 1)
     {
-        
+
         {
             cout << "Введите значение A: ";
             cin >> a;
@@ -83,9 +87,21 @@ int main()
             cin >> y;
             bool a = (x + y > 10) && (y < 3);
             cout << "а)" << (a ? "Значение выражения - истина" : "Значение выражения - ложь") << "\n";
-            
+
             bool b = (x < -3) && y;
             cout << "б)" << (b ? "Значение выражения - истина" : "Значение выражения - ложь") << "\n";
+        }
+    }
+    if (choise == 3)
+    {
+        cout << "Введите числа через пробел: " << "\n";
+        cin >> num1 >> num2 >> num3;
+        if (num1 < 0 || num2 < 0 || num3 < 0)
+        {
+            cout << "The above statement is true";
+        }
+        else {
+            cout << "The above statement is false";
         }
     }
 }
