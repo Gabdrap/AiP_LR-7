@@ -29,53 +29,50 @@ int main()
 
     if (choise == 1)
     {
-
+        cout << "Введите значение A(1, 0): ";
+        cin >> a;
+        cout << "Введите значение B(1, 0): ";
+        cin >> b;
+        cout << "Введите значение C(1, 0): ";
+        cin >> c;
+        bool r1 = a || b && c;
+        if (r1 == true)
         {
-            cout << "Введите значение A: ";
-            cin >> a;
-            cout << "Введите значение B: ";
-            cin >> b;
-            cout << "Введите значение C: ";
-            cin >> c;
-            bool r1 = a || b && c;
-            if (r1 == true)
-            {
-                cout << "Значение выражения а): True";
-            }
-            else
-            {
-                cout << "Значение выражения а): False";
-            }
+            cout << "Значение выражения а): True" << "\n";
+        }
+        else
+        {
+            cout << "Значение выражения а): False" << "\n";
+        }
 
-            bool r2 = !(b || a || c);
-            if (r2 == true)
-            {
-                cout << "Значение выражения б): True";
-            }
-            else
-            {
-                cout << "Значение выражения б): False";
-            }
+        bool r2 = !(b || a || c);
+        if (r2 == true)
+        {
+            cout << "Значение выражения б): True" << "\n";
+        }
+        else
+        {
+            cout << "Значение выражения б): False" << "\n";
+        }
 
-            bool r3 = a && !b || c;
-            if (r3 == true)
-            {
-                cout << "Значение выражения в): True";
-            }
-            else
-            {
-                cout << "Значение выражения в): False";
-            }
+        bool r3 = a && !b || c;
+        if (r3 == true)
+        {
+            cout << "Значение выражения в): True" << "\n";
+        }
+        else
+        {
+            cout << "Значение выражения в): False" << "\n";
+        }
 
-            bool r4 = !a && (!b || c);
-            if (r4 == true)
-            {
-                cout << "Значение выражения г): True";
-            }
-            else
-            {
-                cout << "Значение выражения г): False";
-            }
+        bool r4 = !a && (!b || c);
+        if (r4 == true)
+        {
+            cout << "Значение выражения г): True" << "\n";
+        }
+        else
+        {
+            cout << "Значение выражения г): False" << "\n";
         }
     }
     if (choise == 2)
